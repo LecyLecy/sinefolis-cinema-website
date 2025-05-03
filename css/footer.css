@@ -5,13 +5,25 @@ footer {
 
 .footer {
     display: flex;
-    justify-content: flex-start; /* Aligns text to the left */
-    align-items: center; /* Centers vertically */
-    background-color: #1C1C1E; /* Dark background */
-    height: 100px; /* Adjusted footer height */
-    color: white; /* Text color */
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(45deg, #FF7F50, #FF3155, #FC53FF);
+    height: 100px;
+    color: white;
     font-size: 16px;
-    font-family: 'Poppins', sans-serif; /* Match typography */
-    padding: 0 70px; /* Padding on left and right */
-    font-size: 30px; /* Match Figma */
+    font-family: 'Poppins', sans-serif;
+    padding: 0 70px;
+    font-size: 30px;
+}
+
+@media screen and (min-width: 391px) and (max-width: 768px) {
+    .footer {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .footer {
+        font-size: 28px;
+    }
 }

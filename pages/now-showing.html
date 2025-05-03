@@ -3,28 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sinéfolis</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <title>Now Showing</title>
+    <link rel="stylesheet" href="/css/now-showing-style.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/navigation.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <script src="/js/components.js" defer></script>
+    <script src="/js/now-showing.js" defer></script>
 </head>
 <body>
 
-    <!-- Header will be loaded here -->
     <div id="header-container"></div>
 
-    <!-- Navigation will be loaded here -->
     <div id="nav-container"></div>
 
-    <!-- Main Content Section -->
     <main>
         
+        <h1>Now-Showing</h1>
+
+        <div class="underline-gradient"></div>
+
+        <div class="movie-grid">
+
+            <div class="movie-card">
+                <img src="/assets/images/movie-images/inside-out-smaller-banner.jpg" alt="Poster">
+                <h3>Inside Out</h3>
+                <p>120 min</p>
+            </div>
+
+            <div class="movie-card">
+                <img src="/assets/images/movie-images/ad vitam.jpeg" alt="Poster">
+                <h3>AD VITAM</h3>
+                <p>120 min</p>
+            </div>
+
+            <div class="movie-card">
+                <img src="/assets/images/movie-images/back in action.jpeg" alt="Poster">
+                <h3>Back In Action</h3>
+                <p>120 min</p>
+            </div>
+
+            <div class="movie-card">
+                <img src="/assets/images/movie-images/demon-city.jpeg" alt="Poster">
+                <h3>Demon City</h3>
+                <p>120 min</p>
+            </div>
+
+            <div class="movie-card">
+                <img src="/assets/images/movie-images/exterritorial.jpeg" alt="Poster">
+                <h3>Exterritorial</h3>
+                <p>120 min</p>
+            </div>
+
+            <div class="movie-card">
+                <img src="/assets/images/movie-images/havoc.jpeg" alt="Poster">
+                <h3>Havoc</h3>
+                <p>120 min</p>
+            </div>
+
+            <div class="movie-card">
+                <img src="/assets/images/movie-images/minecraft-image.jpeg" alt="oster">
+                <h3>A Minecraft Movie</h3>
+                <p>120 min</p>
+            </div>
+
+            <div class="movie-card">
+                <img src="/assets/images/movie-images/renner.jpeg" alt="Poster">
+                <h3>RENNER</h3>
+                <p>120 min</p>
+            </div>
+
+            <div class="movie-card">
+                <img src="/assets/images/movie-images/sniper.jpeg" alt="Poster">
+                <h3>Sniper: The Last Stand</h3>
+                <p>120 min</p>
+            </div>
+
+            <div class="movie-card">
+                <img src="/assets/images/movie-images/the rose of versailles.jpeg" alt="Poster">
+                <h3>The Rose Of Versailles</h3>
+                <p>120 min</p>
+            </div>
+
+            <div class="movie-card">
+                <img src="/assets/images/movie-images/counterattack.jpeg" alt="Poster">
+                <h3>Counter Attack</h3>
+                <p>120 min</p>
+            </div>
+
+            <div class="movie-card">
+                <img src="/assets/images/movie-images/bullet train explosion.jpeg" alt="Poster">
+                <h3>Bullet Train Explosion</h3>
+                <p>120 min</p>
+            </div>
+
+        </div>
+
+        <div id="popup-modal" class="modal">
+            <div class="modal-content">
+              <span class="close-button">&times;</span>
+              <h2 id="modal-title"><span class="gradient-text">Judul Film</span></h2>
+              <p class="description"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem ab, alias consequatur fugit, debitis eum adipisci nostrum eos tempore accusantium sapiente reiciendis ex, voluptatibus aliquam animi blanditiis dolorem ratione exercitationem. </p>
+        
+              <h3>Friday, 13 June</h3>
+              <table>
+                <tr><td>09:00</td><td>All Cinema</td></tr>
+                <tr><td>11:30</td><td>All Cinema</td></tr>
+                <tr><td>14:00</td><td>All Cinema</td></tr>
+              </table>
+        
+              <h3>Saturday, 14 June</h3>
+              <table>
+                <tr><td>09:00</td><td>All Cinema</td></tr>
+                <tr><td>11:30</td><td>All Cinema</td></tr>
+                <tr><td>14:00</td><td>All Cinema</td></tr>
+              </table>
+            </div>
+          </div>
+
     </main>
 
-    <!-- Footer will be loaded here -->
     <div id="footer-container"></div>
 
 </body>

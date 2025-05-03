@@ -4,23 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sinéfolis</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/landing-style.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/navigation.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <script src="/js/components.js" defer></script>
+    <script src="/js/landing.js" defer></script>
 </head>
 <body>
 
-    <!-- Header will be loaded here -->
     <div id="header-container"></div>
 
-    <!-- Navigation will be loaded here -->
     <div id="nav-container"></div>
 
-    <!-- Main Content Section -->
     <main>
+        <div class="black-background">
+            <section class="banner">
+                <div class="banner-track" id="bannerTrack">
+                    <div class="banner-slide" style="background-image: url('../assets/images/inside-out.jpeg');">
+                        <div class="banner-overlay">
+                            <div class="banner-content">
+                            <h2>Inside Out</h2>
+                            <p>An emotional journey inside the mind of a young girl as her emotions try to guide her through life changes.</p>
+                            <button class="watch-button-banner">Watch →</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner-slide" style="background-image: url('../assets/images/i_am_steve.jpeg');">
+                        <div class="banner-overlay">
+                            <div class="banner-content">
+                                <h2>A Minecraft Movie</h2>
+                                <p>A mysterious portal pulls four misfits into the Overworld, a bizarre, cubic wonderland that thrives on imagination. To get back home, they'll have to master the terrain while embarking on a magical quest with an unexpected crafter named Steve.</p>
+                                <button class="watch-button-banner">Watch →</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner-slide" style="background-image: url('../assets/images/chi.jpeg');">
+                        <div class="banner-overlay">
+                            <div class="banner-content">
+                            <h2>Orb: On the Movements of the Eartht</h2>
+                            <p>Set in 15th-century Europe, the series follows the dangerous journeys of scholars who risk their lives to pursue research on the forbidden heliocentric theory.</p>
+                            <button class="watch-button-banner">Watch →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-controls">
+                    <button class="banner-button" onclick="moveSlide(-1)">&#8249;</button>
+                    <button class="banner-button" onclick="moveSlide(1)">&#8250;</button>
+                </div>
+            </section>
+            <section class="stats">
+                <div class="stat-box">
+                    <h2 id="cinemas">214</h2>
+                    <p>Cinemas Listed in Indonesia</p>
+                </div>
+                <div class="stat-box">
+                    <h2 id="screens">912</h2>
+                    <p>Screens Available in Indonesia</p>
+                </div>
+            </section>
+        </div>
+
         <div clas="page-wrapper">
             <div class="info-grey">
                 <div class="inside-info">
@@ -61,12 +107,64 @@
             </div>
     
             <div class="info-grey">
-    
+                <div class="inside-info">
+                    <div class="right-side-img">
+                        <img class="promo-50-img" src="\assets\images\Colorful Pastel Abstract Melted Coming Soon Banner_cbg 1.svg" alt="Watching Movie">
+                    </div>
+                    <div class="left-side">
+                        <div class="ultimate">
+                            <h1 class="promo-title">Exciting Promos Just For You!</h1>
+                        </div>
+                        <div class="ult-desc-wrapper">
+                            <div class="ultimate-desc">
+                                <p class="promo-desc">Enjoy exclusive discounts on tickets, snacks, and more! Check out our latest deals and make your movie night even better!</p>
+                            </div>
+                        </div>
+                        <button class="explore-button">Check Promos →</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-black">
+                <div class="inside-info">
+                    <div class="left-side">
+                        <div class="ultimate">
+                            <h1>200+ Cinemas Across Indonesia!</h1>
+                        </div>
+                        <div class="ult-desc-wrapper">
+                            <div class="ultimate-desc">
+                                <p>Wherever you are, a great movie experience is never far away! With over 200 cinemas nationwide, we bring the latest blockbusters, top-quality screens, and ultimate comfort to a location near you.</p>
+                            </div>
+                        </div>
+                        <button class="explore-button">Check Cinemas →</button>
+                    </div>
+                    <div class="right-side-img">
+                        <img class="cinema-img" src="\assets\images\13067_cbg 1.svg" alt="Cinemas Image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-grey">
+                <div class="inside-info">
+                    <div class="feedback-wrapper">
+                        <div class="feedback-img">
+                            <img src="\assets\images\6604 1.svg" alt="Feedback Image">
+                        </div>
+                        <div class="feedback-title">
+                            <h1>We Value Your Feedback!</h1>
+                        </div>
+                        <div class="feedback-desc">
+                            <p>Your opinion matters! Share your thoughts about your cinema experience and help us improve. Let us know what you loved and what we can do better!</p>
+                        </div>
+                        <div class="feedback-button">
+                            <button class="explore-button">Give Feedback →</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 
-    <!-- Footer will be loaded here -->
     <div id="footer-container"></div>
 
 </body>

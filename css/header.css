@@ -1,7 +1,7 @@
 .site-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
     background-color: #1C1C1E;
     padding: 0 70px; /* Padding on left and right */
     height: 70px;
@@ -58,5 +58,93 @@
     height: 18px;
     flex-shrink: 0;
 }
+
+.mobile-header {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .site-header {
+        display: none;
+    }
+
+    .mobile-header {
+        display: block;
+        background-color: #1C1C1E;
+        padding: 1rem;
+      }
+    
+      .mobile-topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    
+      .mobile-header .logo img {
+        height: 40px;
+      }
+    
+      .burger {
+        cursor: pointer;
+        background: linear-gradient(45deg, #FF7F50, #FF3155, #FC53FF);
+        padding: 8px;
+        border-radius: 4px;
+      }
+    
+      .burger img {
+        width: 24px;
+        height: 24px;
+        display: block;
+      }
+    
+      #mobile-nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #1C1C1E;
+        padding: 1rem;
+        margin-top: 1rem;
+        border: 2px solid #FC53FF; /* 💡 border kotak */
+        border-radius: 12px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 0 10px rgba(252, 83, 255, 0.3); /* opsional efek glow */
+      }
+    
+      #mobile-nav-links.active {
+        display: flex;
+      }
+    
+      #mobile-nav-links ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+      }
+    
+      #mobile-nav-links li {
+        margin: 8px 0;
+        padding: 10px 0;
+        border-top: 1px solid #333;
+        border-bottom: 1px solid #333;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+      #mobile-nav-links a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        color: #EAEAEA;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+    
+      #mobile-nav-links a:hover {
+        color: #FF53FF;
+      }
+}
+  
 
 

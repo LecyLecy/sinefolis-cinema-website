@@ -1,0 +1,210 @@
+body {
+    background-color: #1C1C1E;
+    font-family: 'Poppins', sans-serif;
+    color: #EAEAEA;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+    /* border: 2px solid white; */
+    overflow: hidden;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.underline-gradient {
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #FF4D00, #FF00D6);
+    margin-bottom: 32px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.movie-grid {
+    /* border: 2px solid white; */
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    gap: 24px;
+    justify-content: center;
+}
+
+.movie-card {
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 480px;
+    color: #EAEAEA;
+    text-align: left;
+    transition: transform 0.2s ease;
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.movie-card:hover {
+    transform: scale(1.03);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 28px;
+}
+
+.movie-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 8px 12px 0 12px;
+}
+
+.movie-card p {
+    font-size: 14px;
+    color: #aaa;
+    margin: 4px 12px 12px 12px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #1C1C1E;
+    color: #EAEAEA;
+    padding: 24px;
+    border-radius: 16px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+    overflow-y: auto;
+  }
+  
+  .close-button {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .gradient-text {
+    background: linear-gradient(to right, #FF4D00, #FF00D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+  }
+  
+  table td {
+    border-bottom: 1px solid #444;
+    padding: 8px;
+  }
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+@media screen and (max-width: 1203px) {
+    main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .movie-grid {
+        /* border: 2px solid white; */
+        grid-template-columns: repeat(3, 280px);
+    }
+}
+
+@media screen and (max-width: 897px) {
+    main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .movie-grid {
+        /* border: 2px solid white; */
+        grid-template-columns: repeat(2, 280px);
+    }
+}
+
+@media screen and (max-width: 597px) {
+    main {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .movie-grid {
+        /* border: 2px solid white; */
+        grid-template-columns: repeat(2, 170px);
+        /* gap: 24px; */
+    }
+    
+    .movie-card {
+        /* border: 2px solid white; */
+        width: 180px;
+        height: 324px;
+    }
+
+    .movie-card img {
+        width: 90%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 28px;
+    }
+
+    .movie-card h3 {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 8px 12px 0 12px;
+    }
+
+    .movie-card p {
+        font-size: 14px;
+        color: #aaa;
+        margin: 4px 12px 12px 12px;
+    }
+
+    .modal-content {
+        width: 92%;
+        max-width: 300px;
+        padding: 12px;
+    }
+    
+    .modal-content h2 {
+        font-size: 18px;
+    }
+    
+    .modal-content p,
+    .modal-content table td {
+        font-size: 13px;
+    }
+}

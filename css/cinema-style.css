@@ -1,0 +1,82 @@
+body {
+    background-color: #1C1C1E;
+    font-family: 'Poppins', sans-serif;
+    color: #EAEAEA;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.underline-gradient {
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #FF4D00, #FF00D6);
+    margin-bottom: 32px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.cinema-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.cinema-card {
+    background-color: #242424;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    transition: transform 0.3s;
+}
+
+.cinema-card:hover {
+    transform: translateY(-5px);
+}
+
+.cinema-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cinema-info {
+    padding: 1rem;
+}
+
+.cinema-name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.cinema-location {
+    font-size: 14px;
+    font-weight: 400;
+    color: #CCCCCC;
+}
+
+@media screen and (max-width: 768px) {
+    h1 { font-size: 36px; }
+    .cinema-name { font-size: 18px; }
+    .cinema-location { font-size: 13px; }
+}
+
+@media screen and (max-width: 390px) {
+    main { padding: 1rem; }
+    h1 { font-size: 28px; }
+}
