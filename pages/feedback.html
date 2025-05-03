@@ -4,27 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sinéfolis</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/feedback-style.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/navigation.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <script src="/js/components.js" defer></script>
+    <script src="/js/feedback.js" defer></script>
 </head>
 <body>
 
-    <!-- Header will be loaded here -->
     <div id="header-container"></div>
 
-    <!-- Navigation will be loaded here -->
     <div id="nav-container"></div>
 
-    <!-- Main Content Section -->
     <main>
         
+        <h1>Feedback</h1>
+        
+        <div class="underline-gradient"></div>
+
+        <div class="feedback-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Insert Name">
+            <div class="error-message" id="name-error"></div>
+        
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Insert Email">
+            <div class="error-message" id="email-error"></div>
+        
+            <label for="branch">Cinema Branch Visited</label>
+            <select id="branch">
+                <option value="">-- Select a Cinema Branch --</option>
+            </select>
+            <div class="error-message" id="branch-error"></div>
+        
+            <label for="rating">How would you rate your experience?</label>
+            <div class="star-rating" id="starRating">
+                <i class="star" data-value="1">&#9733;</i>
+                <i class="star" data-value="2">&#9733;</i>
+                <i class="star" data-value="3">&#9733;</i>
+                <i class="star" data-value="4">&#9733;</i>
+                <i class="star" data-value="5">&#9733;</i>
+            </div>
+            <div class="error-message" id="rating-error"></div>
+        
+            <label for="story">Tell us how was the experience</label>
+            <textarea id="story" placeholder="Write your story"></textarea>
+            <div class="error-message" id="story-error"></div>
+        
+            <button class="send-btn">Send Feedback ➜</button>
+        </div>
+
     </main>
 
-    <!-- Footer will be loaded here -->
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <div class="checkmark">✔</div>
+            <p>Thank you! Your feedback has been submitted.</p>
+            <a href="/pages/landing.html" class="send-btn">Home ➜</a>
+        </div>
+    </div>
+    
+
     <div id="footer-container"></div>
 
 </body>

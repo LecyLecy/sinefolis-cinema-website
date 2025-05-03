@@ -32,11 +32,12 @@ h1 {
 
 .promo-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
 .promo-card {
+    /* border: 2px solid white; */
     background-color: #242424;
     border-radius: 20px;
     overflow: hidden;
