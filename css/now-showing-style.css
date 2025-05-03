@@ -91,9 +91,9 @@ h1 {
     background-color: rgba(0,0,0,0.7);
     justify-content: center;
     align-items: center;
-  }
+}
   
-  .modal-content {
+.modal-content {
     background-color: #1C1C1E;
     color: #EAEAEA;
     padding: 24px;
@@ -102,32 +102,32 @@ h1 {
     width: 90%;
     box-shadow: 0 8px 30px rgba(0,0,0,0.5);
     overflow-y: auto;
-  }
+}
   
-  .close-button {
+.close-button {
     color: #fff;
     float: right;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
-  }
+}
   
-  .gradient-text {
+.gradient-text {
     background: linear-gradient(to right, #FF4D00, #FF00D6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
+}
   
-  table {
+table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 16px;
-  }
+}
   
-  table td {
+table td {
     border-bottom: 1px solid #444;
     padding: 8px;
-  }
+}
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 

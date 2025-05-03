@@ -65,7 +65,6 @@ sendBtn.addEventListener("click", function (e) {
     popup.classList.remove("hidden");
 });
 
-    // Populate dropdown
     const cinemaBranches = [
         "Sinéfolis Athena",
         "Sinéfolis Chicago",
@@ -91,7 +90,6 @@ function showError(id, message) {
     el.style.display = "block";
 }
 
-// Helper: sembunyikan semua error
 function clearErrors() {
     document.querySelectorAll('.error-message').forEach(el => {
         el.textContent = "";

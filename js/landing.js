@@ -20,20 +20,55 @@ animateCounter("cinemas", cinemaCount);
 animateCounter("screens", screenCount);
 
 let currentSlide = 0;
-    const track = document.getElementById('bannerTrack');
-    const totalSlides = track.children.length;
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
 
-    function updateNavButtons() {
-      prevBtn.classList.toggle('hidden', currentSlide === 0);
-      nextBtn.classList.toggle('hidden', currentSlide === totalSlides - 1);
-    }
+const track = document.getElementById('bannerTrack');
+const slides = document.querySelectorAll('.banner-slide');
+const indicators = document.getElementById('bannerIndicators');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const totalSlides = slides.length;
 
-    function moveSlide(direction) {
-      currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
-      track.style.transform = `translateX(-${currentSlide * 100}%)`;
-      updateNavButtons();
-    }
+slides.forEach((_, index) => {
+    const dot = document.createElement('span');
+    dot.addEventListener('click', () => goToSlide(index));
+    indicators.appendChild(dot);
+});
 
+updateIndicators();
+updateNavButtons();
+
+function goToSlide(index) {
+    currentSlide = (index + totalSlides) % totalSlides;
+    track.style.transform = `translateX(-${currentSlide * 100}vw)`;
+    updateIndicators();
     updateNavButtons();
+}
+
+function moveSlide(direction) {
+    goToSlide(currentSlide + direction);
+}
+
+function updateIndicators() {
+    const dots = indicators.querySelectorAll('span');
+    dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentSlide);
+    });
+}
+
+function updateNavButtons() {
+    if (prevBtn && nextBtn) {
+        prevBtn.classList.toggle('hidden', currentSlide === 0);
+        nextBtn.classList.toggle('hidden', currentSlide === totalSlides - 1);
+    }
+}
+
+let startX = 0;
+track.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+});
+track.addEventListener('touchend', (e) => {
+    const endX = e.changedTouches[0].clientX;
+    const diff = startX - endX;
+    if (diff > 50) moveSlide(1);
+    else if (diff < -50) moveSlide(-1);
+});

@@ -3,12 +3,12 @@
     align-items: center;
     justify-content: center;
     background-color: #1C1C1E;
-    padding: 0 70px; /* Padding on left and right */
+    padding: 0 70px;
     height: 70px;
 }
 
 .logo img {
-    height: 40px; /* Adjust size */
+    height: 40px;
 }
 
 .search-container {
@@ -103,12 +103,12 @@
         background-color: #1C1C1E;
         padding: 1rem;
         margin-top: 1rem;
-        border: 2px solid #FC53FF; /* 💡 border kotak */
+        border: 2px solid #FC53FF;
         border-radius: 12px;
         width: 90%;
         margin-left: auto;
         margin-right: auto;
-        box-shadow: 0 0 10px rgba(252, 83, 255, 0.3); /* opsional efek glow */
+        box-shadow: 0 0 10px rgba(252, 83, 255, 0.3);
       }
     
       #mobile-nav-links.active {

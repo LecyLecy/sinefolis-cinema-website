@@ -11,6 +11,9 @@
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <script src="/js/components.js" defer></script>
     <script src="/js/landing.js" defer></script>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1C1C1E">
 </head>
 <body>
 
@@ -19,150 +22,139 @@
     <div id="nav-container"></div>
 
     <main>
-        <div class="black-background">
-            <section class="banner">
-                <div class="banner-track" id="bannerTrack">
-                    <div class="banner-slide" style="background-image: url('../assets/images/inside-out.jpeg');">
-                        <div class="banner-overlay">
-                            <div class="banner-content">
-                            <h2>Inside Out</h2>
-                            <p>An emotional journey inside the mind of a young girl as her emotions try to guide her through life changes.</p>
+        <section class="banner">
+            <div class="banner-track" id="bannerTrack">
+                <div class="banner-slide" style="background-image: url('../assets/images/movie-banner/inside-out.jpeg');">
+                    <div class="banner-overlay">
+                        <div class="banner-content">
+                        <h2>Inside Out</h2>
+                        <p>An emotional journey inside the mind of a young girl as her emotions try to guide her through life changes.</p>
+                        <a href="/pages/now-showing.html">
                             <button class="watch-button-banner">Watch →</button>
-                            </div>
+                        </a>
                         </div>
                     </div>
-                    <div class="banner-slide" style="background-image: url('../assets/images/i_am_steve.jpeg');">
-                        <div class="banner-overlay">
-                            <div class="banner-content">
-                                <h2>A Minecraft Movie</h2>
-                                <p>A mysterious portal pulls four misfits into the Overworld, a bizarre, cubic wonderland that thrives on imagination. To get back home, they'll have to master the terrain while embarking on a magical quest with an unexpected crafter named Steve.</p>
+                </div>
+                <div class="banner-slide" style="background-image: url('../assets/images/movie-banner/i_am_steve.jpeg');">
+                    <div class="banner-overlay">
+                        <div class="banner-content">
+                            <h2>A Minecraft Movie</h2>
+                            <p>A mysterious portal pulls four misfits into the Overworld, a bizarre, cubic wonderland that thrives on imagination. To get back home, they'll have to master the terrain while embarking on a magical quest with an unexpected crafter named Steve.</p>
+                            <a href="/pages/now-showing.html">
                                 <button class="watch-button-banner">Watch →</button>
-                            </div>
+                            </a>
                         </div>
                     </div>
-                    <div class="banner-slide" style="background-image: url('../assets/images/chi.jpeg');">
-                        <div class="banner-overlay">
-                            <div class="banner-content">
-                            <h2>Orb: On the Movements of the Eartht</h2>
-                            <p>Set in 15th-century Europe, the series follows the dangerous journeys of scholars who risk their lives to pursue research on the forbidden heliocentric theory.</p>
+                </div>
+                <div class="banner-slide" style="background-image: url('../assets/images/movie-banner/chi.jpeg');">
+                    <div class="banner-overlay">
+                        <div class="banner-content">
+                        <h2>Orb: On the Movements of the Eartht</h2>
+                        <p>Set in 15th-century Europe, the series follows the dangerous journeys of scholars who risk their lives to pursue research on the forbidden heliocentric theory.</p>
+                        <a href="/pages/now-showing.html">
                             <button class="watch-button-banner">Watch →</button>
-                            </div>
+                        </a>
                         </div>
                     </div>
                 </div>
-                <div class="banner-controls">
-                    <button class="banner-button" onclick="moveSlide(-1)">&#8249;</button>
-                    <button class="banner-button" onclick="moveSlide(1)">&#8250;</button>
-                </div>
-            </section>
-            <section class="stats">
-                <div class="stat-box">
-                    <h2 id="cinemas">214</h2>
-                    <p>Cinemas Listed in Indonesia</p>
-                </div>
-                <div class="stat-box">
-                    <h2 id="screens">912</h2>
-                    <p>Screens Available in Indonesia</p>
-                </div>
-            </section>
-        </div>
+            </div>
+            <div class="banner-controls">
+                <button class="banner-button" onclick="moveSlide(-1)">&#8249;</button>
+                <button class="banner-button" onclick="moveSlide(1)">&#8250;</button>
+            </div>
+            <div class="banner-indicators" id="bannerIndicators"></div>
+        </section>
 
-        <div clas="page-wrapper">
-            <div class="info-grey">
-                <div class="inside-info">
-                    <div class="left-side">
-                        <div class="ultimate">
-                            <h1>The Ultimate Movie Experience</h1>
-                        </div>
-                        <div class="ult-desc-wrapper">
-                            <div class="ultimate-desc">
-                                <p>Immerse yourself in the best cinema experience with top-quality screens, crystal-clear sound, and ultimate comfort. Enjoy movies like never before!</p>
-                            </div>
-                        </div>
-                        <button class="explore-button">Explore Movies →</button>
-                    </div>
-                    <div class="right-side-img">
-                        <img src="/assets/images/Movie Night-amico 2.svg" alt="Watching Movie">
-                    </div>
-                </div>
+        <section class="stats">
+            <div class="stat-box">
+                <h2 id="cinemas">214</h2>
+                <p>Cinemas Listed in Indonesia</p>
             </div>
-    
-            <div class="info-black">
-                <div class="inside-info-two">
-                    <div class="left-side-two">
-                        <img class="fast-loading-img" src="/assets/images/Fast loading-rafiki 1.svg" alt="Fast Loading">
-                        <h2 class="fast">Fast & Convenient</h2>
-                        <div class="fast-desc">
-                            <p>Our cinemas offer quick service and are located near you, so you can enjoy your movie without delays!</p>    
-                        </div>
-                    </div>
-                    <div class="right-side-two">
-                        <img class="take-away-img" src="/assets/images/Take Away-bro 1.svg" alt="Take Away">
-                        <h2 class="Delic">Delicious & Well-Served</h2>
-                        <div class="del-desc">
-                            <p>Enjoy high-quality food with great service, making your movie experience even better!</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="stat-box">
+                <h2 id="screens">912</h2>
+                <p>Screens Available in Indonesia</p>
             </div>
-    
-            <div class="info-grey">
-                <div class="inside-info">
-                    <div class="right-side-img">
-                        <img class="promo-50-img" src="\assets\images\Colorful Pastel Abstract Melted Coming Soon Banner_cbg 1.svg" alt="Watching Movie">
-                    </div>
-                    <div class="left-side">
-                        <div class="ultimate">
-                            <h1 class="promo-title">Exciting Promos Just For You!</h1>
-                        </div>
-                        <div class="ult-desc-wrapper">
-                            <div class="ultimate-desc">
-                                <p class="promo-desc">Enjoy exclusive discounts on tickets, snacks, and more! Check out our latest deals and make your movie night even better!</p>
-                            </div>
-                        </div>
-                        <button class="explore-button">Check Promos →</button>
-                    </div>
-                </div>
-            </div>
+        </section>
 
-            <div class="info-black">
-                <div class="inside-info">
-                    <div class="left-side">
-                        <div class="ultimate">
-                            <h1>200+ Cinemas Across Indonesia!</h1>
-                        </div>
-                        <div class="ult-desc-wrapper">
-                            <div class="ultimate-desc">
-                                <p>Wherever you are, a great movie experience is never far away! With over 200 cinemas nationwide, we bring the latest blockbusters, top-quality screens, and ultimate comfort to a location near you.</p>
-                            </div>
-                        </div>
-                        <button class="explore-button">Check Cinemas →</button>
-                    </div>
-                    <div class="right-side-img">
-                        <img class="cinema-img" src="\assets\images\13067_cbg 1.svg" alt="Cinemas Image">
-                    </div>
+        <section class="ultimate-section">
+            <div class="ultimate-container">
+                <div class="ultimate-text">
+                <h1 class="ultimate-title">The Ultimate<br>Movie Experience</h1>
+                <p class="ultimate-desc">
+                    Immerse yourself in the best cinema experience with top-quality screens, crystal-clear sound, and ultimate comfort. Enjoy movies like never before!
+                </p>
+                <a href="/pages/now-showing.html">
+                    <button class="ultimate-button">Explore Movies →</button>
+                </a>
+                </div>
+                <div class="ultimate-image">
+                <img src="/assets/images/figma-images/Movie Night-amico 2.svg" alt="Watching Movie">
                 </div>
             </div>
+        </section>
 
-            <div class="info-grey">
-                <div class="inside-info">
-                    <div class="feedback-wrapper">
-                        <div class="feedback-img">
-                            <img src="\assets\images\6604 1.svg" alt="Feedback Image">
-                        </div>
-                        <div class="feedback-title">
-                            <h1>We Value Your Feedback!</h1>
-                        </div>
-                        <div class="feedback-desc">
-                            <p>Your opinion matters! Share your thoughts about your cinema experience and help us improve. Let us know what you loved and what we can do better!</p>
-                        </div>
-                        <div class="feedback-button">
-                            <button class="explore-button">Give Feedback →</button>
-                        </div>
-                    </div>
+        <section class="info-section">
+            <div class="info-item">
+                <img src="/assets/images/figma-images/Fast loading-rafiki 1.svg" alt="Fast Loading">
+                <h3>Fast & Convenient</h3>
+                <p>Our cinemas offer quick service and are located near you, so you can enjoy your movie without delays!</p>
+            </div>
+            <div class="info-item">
+                <img src="/assets/images/figma-images/Take Away-bro 1.svg" alt="Take Away">
+                <h3>Delicious & Well-Served</h3>
+                <p>Enjoy high-quality food with great service, making your movie experience even better!</p>
+            </div>
+        </section>
+
+        <section class="promo-section">
+            <div class="promo-wrapper">
+                <div class="promo-img">
+                    <img src="/assets/images/figma-images/Colorful Pastel Abstract Melted Coming Soon Banner_cbg 1.svg" alt="Promo 50%">
+                </div>
+                <div class="promo-content">
+                    <h2 class="promo-title">Exciting Promos<br>Just for You!</h2>
+                    <p class="promo-desc">
+                        Enjoy exclusive discounts on tickets, snacks, and more! Check out our latest deals and make your movie night even better!
+                    </p>
+                    <a href="/pages/promo.html">
+                        <button class="ultimate-button">Check Promos →</button>
+                    </a>
                 </div>
             </div>
-        </div>
+        </section>    
+            
+        <section class="cinema-section">
+            <div class="cinema-content">
+                <div class="cinema-text">
+                <h2 class="cinema-title">200+ Cinemas Across Indonesia!</h2>
+                <p class="cinema-description">
+                    Wherever you are, a great movie experience is never far away! With over 200 cinemas nationwide, we bring the latest blockbusters, top-quality screens, and ultimate comfort to a location near you.
+                </p>
+                <a href="/pages/cinema.html">
+                    <button class="ultimate-button">Check Cinemas →</button>
+                </a>
+                </div>
+                <div class="cinema-image">
+                <img src="\assets\images\figma-images\13067_cbg 1.svg" alt="Cinema Experience" />
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback-section">
+            <div class="feedback-container">
+                <div class="feedback-image">
+                    <img src="/assets/images/figma-images/6604 1.svg" alt="Feedback Illustration">
+                </div>
+                <div class="feedback-content">
+                    <h2>We Value Your Feedback!</h2>
+                    <p>Your opinion matters! Share your thoughts about your cinema experience and help us improve. Let us know what you loved and what we can do better!</p>
+                    <a href="/pages/feedback.html">
+                        <button class="ultimate-button">Give Feedback →</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+            
     </main>
 
     <div id="footer-container"></div>

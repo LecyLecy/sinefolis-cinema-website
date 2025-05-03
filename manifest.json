@@ -1,0 +1,16 @@
+{
+    "name": "Sinéfolis",
+    "short_name": "Sinéfolis",
+    "start_url": "/pages/landing.html",
+    "display": "standalone",
+    "background_color": "#1C1C1E",
+    "theme_color": "#1C1C1E",
+    "icons": [
+      {
+        "src": "/assets/favicon.ico",
+        "sizes": "48x48 72x72 96x96 144x144 192x192 512x512",
+        "type": "image/x-icon"
+      }
+    ]
+  }
+  

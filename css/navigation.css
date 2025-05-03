@@ -1,41 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
-/* Navigation bar styles */
 .navbar {
     display: flex;
-    justify-content: center; /* Center the nav links */
+    justify-content: center;
     align-items: center;
     background: linear-gradient(45deg, #FF7F50, #FF3155, #FC53FF);
-    height: 60px; /* Adjusted height */
+    height: 60px;
     padding: 0 20px;
 }
 
-/* Navigation links container */
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 30px; /* Spacing between links */
+    gap: 30px;
     padding: 0;
     margin: 0;
 }
 
-/* Individual nav links */
 .nav-links li a {
-    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
-    font-size: 20px; /* Match Figma */
-    font-weight: 400; /* Regular */
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
     text-decoration: none;
     color: black;
     transition: color 0.3s ease-in-out;
 }
 
-
-/* Hover effect */
 .nav-links li a:hover {
-    color: white; /* Changes color on hover */
+    color: white;
 }
 
-/* Responsive Design */
 @media screen and (max-width: 768px) {
     .navbar {
         display: none;
